@@ -5,9 +5,9 @@ Small project I made in 30 minutes just for fun. :P
 ## How does it work?
 Well, first you open the site link below, then you enter how many cards to generate, you click 'Generate' and it shows you a list of cards. Simple! :D 
 
-The script **card-deck.js** contains 2 classes (Card and Deck).
-Class **Card** contains only a constructor that has 2 inputs (suit and value)
-Class **Deck** contains a constructor that creates an empty array, 3 functions(createDeck, shuffle, deal)
+The script **card-deck.js** contains 2 classes (Card and Deck).  
+Class **Card** contains only a constructor that has 2 inputs (suit and value)  
+Class **Deck** contains a constructor that creates an empty array, 3 functions(createDeck, shuffle, deal)  
 
 ### How to use the card-deck.js?
 
