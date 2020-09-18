@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #eee;
+    color: black;
+
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+h1 {
+    margin: 5px 0px;
+    display: inline-block;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#number {
+    font-size: 18px;
+    width: 40px;
+}
+
+#number:focus {
+    outline: none;
+}
+
+button {
+    height: 24px;
+    width: 178px;
+    margin-top: 5px;
+    cursor: pointer;
+
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e2e2e2;
+}
+
+button:focus {
+    outline: none;
+}
+
+.cards {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.alignCenter {
+    width: 810px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card {
+    display: inline-block;
+    width: 150px;
+    height: 250px;
+    margin-top: 15px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.value {
+    display: block;
+    font-weight: 500;
+    font-size: 28px;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 25px;
+    color: #515262;
+}
+
+.suit {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25%;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.link:hover {
+    color: #333;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Deck</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Card Deck</h1> made by
+        <a class="link" href="https://github.com/AndrejStojkovic">Andrej Stojkovic</a> <br>
+        <label>Number of Cards:</label>
+        <input id="number" type="number" min="1" max="52"> <br>
+        <button onclick="generate()">Generate</button>
+
+        <div class="cards">
+            <div class="alignCenter"></div>
+        </div>
+    </div>
+
+    <script src="card-deck.js"></script>
+    <script>
+        function generate() {
+            var remChild = document.getElementsByClassName('alignCenter')[0];
+            while(remChild.firstChild) remChild.removeChild(remChild.lastChild);
+
+            var cardNum = parseInt(document.getElementById('number').value);
+            if(cardNum > 52) cardNum.value = 52;
+            else if(cardNum < 52) cardNum.value = 1;
+            else if(cardNum == '') cardNum.value = 1;
+
+            var deck = new Deck();
+            deck.createDeck(suits, values);
+            deck.shuffle();
+            let cards = deck.deal(cardNum);
+
+            for(var i = 0; i < cardNum; i++) {
+                var card = document.createElement('div');
+                card.classList.add('card');
+                if((i + 1) % 5 != 0)
+                    card.style = 'margin-right: 10px;';
+                    
+                //card.setAttribute('style', 'margin-right: 10px;');
+            
+                var cardSuit = document.createElement('img');
+                cardSuit.classList.add('suit');
+                cardSuit.setAttribute('type', cards[i].suit);
+                cardSuit.setAttribute('src', 'media/' + cardSuit.getAttribute('type') + '.png');
+
+                var cardVal = document.createElement('label');
+                cardVal.classList.add('value');
+                cardVal.innerHTML = cards[i].value;
+                if(cardSuit.getAttribute('type') == 'Spades' || cardSuit.getAttribute('type') == 'Clubs') cardVal.setAttribute('style', 'color: #515262;');
+                else cardVal.setAttribute('style', 'color: #ff6464;');
+            
+                card.appendChild(cardVal);
+                card.appendChild(cardSuit);
+            
+                document.getElementsByClassName('alignCenter')[0].appendChild(card);
+            }
+        }
+    </script>
+
+    <script>
+        var deck = new Deck(); // creates an empty deck;
+        deck.createDeck(suits, values); // Takes from the arrays 'suits' and 'values' from card-deck.js and creates an array of cards (52)
+        deck.shuffle(); // Shuffles the deck once. To shuffle it more than once you can use 'deck.shuffleDeck(num)'
+        var cards = deck.deal(10); // 'num' is a variable and should take an integer, num < 52 && num > 1
+        // Print out the dealt cards
+        for(var i = 0; i < cards.length; i++)
+            console.log(cards[i].value + ' of ' + cards[i].suit);
+    </script>
+</body>
+</html>
