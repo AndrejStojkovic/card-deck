@@ -16,7 +16,7 @@ Well first of all, you have to create a new js file or just simple write in a <s
 ```javascript
 var deck = new Deck(); // creates an empty deck;
 deck.createDeck(suits, values); // Takes from the arrays 'suits' and 'values' from card-deck.js and creates an array of cards (52)
-deck.shuffle(); // Shuffles the deck once. To shuffle it more than once you can use 'deck.shuffleDeck(num)', ex. deck.shuffleDeck(5)
+deck.shuffle(); // Shuffles the deck once. To shuffle it more than once you can use 'deck.shuffleDeck(num)'
 var cards = deck.deal(num); // 'num' is a variable and should take an integer, num < 52 && num > 1
 var k = 0;
 // Print out the dealt cards
