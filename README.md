@@ -37,6 +37,7 @@ for(var i = 0; i < cards.length; i++)
 ```
 
 ### Known bugs:
-- The site is not optimized very well for mobile and etc.. 
- 
-Link to website:
+- The site is not optimized very well for mobile and etc..  
+  
+### Link to website:
+
