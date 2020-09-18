@@ -18,6 +18,7 @@ var deck = new Deck(); // Creates an empty deck;
 var num = 4;
 deck.createDeck(suits, values); // Takes from the arrays 'suits' and 'values' from card-deck.js and creates an array of cards (52)
 deck.shuffle(); // Shuffles the deck once. To shuffle it more than once you can use 'deck.shuffleDeck(num)'
+//deck.shuffleDeck(3);
 var cards = deck.deal(num); // 'num' is a variable and should take an integer (1 <= num <= 52)
 // Print out the dealt cards
 for(var i = 0; i < cards.length; i++)
