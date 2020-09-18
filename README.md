@@ -11,8 +11,16 @@ Class **Deck** contains a constructor that creates an empty array, 3 functions(c
 
 ### How to use the card-deck.js?
 
-Well first of all, you have to create a new js file or just simple write in a <script> tag.
-
+You can also you the card-deck.js in your project. 
+First download the card-deck.js file and put it in your folder and link in the html file at the end of the <body> tag.  
+```html
+    <script src="./card-deck.js"></script>
+<body>
+```
+ 
+Then you have to create a new js file or just simple write in another <script> tag before the card-deck script tag.  
+ 
+Code:
 ```javascript
 var deck = new Deck(); // Creates an empty deck;
 var num = 4;
