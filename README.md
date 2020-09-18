@@ -20,7 +20,7 @@ First download the card-deck.js file and put it in your folder and link in the h
 <body>
 ```
  
-Then you have to create a new js file or just simple write in another <script> tag before the card-deck script tag.  
+Then you have to create a new js file or just simple write in another <script> tag.  
  
 Code:
 ```javascript
