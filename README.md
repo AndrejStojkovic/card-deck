@@ -26,6 +26,6 @@ for(var i = 0; i < cards.length; i++)
 ```
 
 ### Known bugs:
-- Not optimized very well for mobile and etc.. 
+- The site is not optimized very well for mobile and etc.. 
  
 Link to website:
