@@ -12,7 +12,7 @@ Class **Deck** contains a constructor that creates an empty array, 3 functions(c
 ### How to use the card-deck.js?
 
 You can also you the card-deck.js in your project. 
-First download the card-deck.js file and put it in your folder and link in the html file at the end of the <body> tag.  
+First download the card-deck.js file and put it in your folder and link it in the html file at the end of the <body> tag.  
 ```html
 <body>
     <!-- other html stuff -->
