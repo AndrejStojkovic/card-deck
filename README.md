@@ -37,7 +37,7 @@ for(var i = 0; i < cards.length; i++)
 ```
 
 ### Known bugs:
-- The site is not optimized very well for mobile and etc..  
+- The site is not optimized very well for smaller screens..  
   
 ### Link to website:
 https://andrejstojkovic.github.io/card-deck/
