@@ -36,6 +36,9 @@ for(var i = 0; i < cards.length; i++)
 
 ```
 
+### Download card-deck.js
+Download link: https://git.io/JTkzc
+
 ### Known bugs:
 - The site is not optimized very well for smaller screens, still works tho...  
   
