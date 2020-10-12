@@ -43,4 +43,4 @@ Download link: https://git.io/JTkzc
 - The site is not optimized very well for smaller screens, still works tho...  
   
 ### Link to website:
-https://andrejstojkovic.github.io/card-deck/
+https://andrejstojkovic.github.io/card-deck.js/
